@@ -1,5 +1,5 @@
 (ns lx-sentai.handler
-  (:require [clojure.string :refer [join]]
+  (:require [clojure.string :refer [join, split]]
             [compojure.core :refer :all]
             [compojure.handler :refer [site]]
             [compojure.route :as route]
@@ -25,7 +25,12 @@
          :mrkdwn_in ["fields"]}]}))
 
 (defroutes app-routes
-  (GET "/" [] (response (getResponse)))
+  (GET "/" {query-string :query-string}
+    (if (== (compare ((split query-string #"=") 1) "9miNJtx9j5aJ7K88eEgb5CLB") 0)
+      (response (getResponse))
+      (str "Sowwy!")
+    )
+  )
   (route/not-found "Not Found"))
 
 (def app
