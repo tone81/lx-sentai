@@ -8,6 +8,8 @@
                  [ring/ring-json "0.4.0"]]
   :plugins [[lein-ring "0.9.7"]]
   :ring {:handler lx-sentai.handler/app}
+  :uberjar-name "lx-sentai.jar"
   :profiles
+  {:production {:env {:production true}}}
   {:dev {:dependencies [[javax.servlet/servlet-api "2.5"]
                         [ring/ring-mock "0.3.0"]]}})
