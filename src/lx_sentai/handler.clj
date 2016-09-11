@@ -10,11 +10,11 @@
 (defroutes app-routes
   (GET "/" [] (response {:response_type "in_channel"
                 :attachments
-                  {:title "Sentai"
+                  [{:title "Sentai"
                    :title_link "https://s3-us-west-1.amazonaws.com/sentai/01-gorenger.jpg"
                    :image_url "https://s3-us-west-1.amazonaws.com/sentai/01-gorenger.jpg"
                    :fallback ""
-                   :mrkdwn_in ["fields"]}}))
+                   :mrkdwn_in ["fields"]}]}))
   (route/not-found "Not Found"))
 
 (def app
