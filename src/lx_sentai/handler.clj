@@ -1,13 +1,11 @@
 (ns lx-sentai.handler
   (:require [clojure.string :refer [join, split]]
-            [compojure.core :refer :all]
+            [compojure.api.sweet :refer :all]
             [compojure.handler :refer [site]]
-            [compojure.route :as route]
             [environ.core :refer [env]]
             [lx-sentai.data :refer [sentai]]
             [ring.adapter.jetty :as jetty]
-            [ring.middleware.json :refer [wrap-json-response]]
-            [ring.util.response :refer [response]]))
+            [ring.util.http-response :refer :all]))
 
 (defn getSentai
   []
@@ -24,17 +22,19 @@
          :fallback (join "\n" [name (join " | " colors)])
          :mrkdwn_in ["fields"]}]}))
 
-(defroutes app-routes
-  (GET "/" {query-string :query-string}
-    (if (== (compare ((split query-string #"=") 1) "9miNJtx9j5aJ7K88eEgb5CLB") 0)
-      (response (getResponse))
-      (str "Sowwy!")
-    )
-  )
-  (route/not-found "Not Found"))
+(defapi app
+  (context "/" []
+    :tags ["main"]
 
-(def app
-  (wrap-json-response app-routes))
+    (GET "/" []
+      :query-params [token :- String]
+      :summary "Get the Pose"
+      (if (== (compare token "9miNJtx9j5aJ7K88eEgb5CLB") 0)
+        (ok (getResponse))
+        (ok "Sowwy!")
+      )
+    )
+  ))
 
 (defn -main [& [port]]
   (let [port (Integer. (or port (env :port) 3000))]

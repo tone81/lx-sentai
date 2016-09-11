@@ -5,10 +5,9 @@
   :license {:name "MIT License"
             :url "https://opensource.org/licenses/MIT"}
   :dependencies [[org.clojure/clojure "1.8.0"]
-                 [compojure "1.5.1"]
+                 [metosin/compojure-api "1.0.0"]
                  [environ "1.0.0"]
-                 [ring/ring-jetty-adapter "1.4.0"]
-                 [ring/ring-json "0.4.0"]]
+                 [ring/ring-jetty-adapter "1.4.0"]]
   :plugins [[lein-ring "0.9.7"]
             [environ/environ.lein "0.3.1"]]
   :ring {:handler lx-sentai.handler/app}
