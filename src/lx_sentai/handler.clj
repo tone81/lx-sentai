@@ -1,7 +1,9 @@
 (ns lx-sentai.handler
   (:require [compojure.core :refer :all]
+            [compojure.handler :refer [site]]
             [compojure.route :as route]
-            [ring.middleware.defaults :refer [wrap-defaults site-defaults]]
+            [environ.core :refer [env]]
+            [ring.adapter.jetty :as jetty]
             [ring.middleware.json :refer [wrap-json-response]]
             [ring.util.response :refer [response]]))
 
@@ -16,4 +18,8 @@
   (route/not-found "Not Found"))
 
 (def app
-  (wrap-json-response (wrap-defaults app-routes site-defaults)))
+  (wrap-json-response app-routes))
+
+(defn -main [& [port]]
+  (let [port (Integer. (or port (env :port) 3000))]
+    (jetty/run-jetty (site #'app) {:port port :join? false})))
