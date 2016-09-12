@@ -16,7 +16,10 @@
   (let [{name :name image :image colors :colors} (getSentai)]
     {:response_type "in_channel"
      :attachments
-       [{:title name
+       [{:fields [{:title name
+                   :value (join " | " colors)
+                   :short true}]
+         :title name
          :title_link image
          :image_url image
          :fallback (join "\n" [name (join " | " colors)])

@@ -1,6 +1,6 @@
 (defproject lx-sentai "0.1.0-SNAPSHOT"
   :description "Lets you get a Sentai Pose"
-  :url "http://example.com/FIXME"
+  :url "http://lx-sentai.herokuapp.com"
   :min-lein-version "2.0.0"
   :license {:name "MIT License"
             :url "https://opensource.org/licenses/MIT"}
