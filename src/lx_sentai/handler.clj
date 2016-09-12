@@ -14,7 +14,7 @@
 (defn getSquad
   [text]
   (match text
-    "" ["Tony" "Tyrone" "Denise" "Kyla"]
+    ""     ["Tony" "Tyrone" "Denise" "Kyla"]
     :else  (split text #" ")))
 
 (defn getValues
@@ -44,7 +44,7 @@
       :query-params [token :- String {text :- String ""}]
       :summary      "Get the Pose with token and text. text defaults to empty string."
       (match (compare token TOKEN)
-        0 (ok (getResponse text))
+        0     (ok (getResponse text))
         :else (ok "Sowwy!"))
     )
   ))
