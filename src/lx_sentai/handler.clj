@@ -4,28 +4,26 @@
             [compojure.api.sweet :refer :all]
             [compojure.handler :refer [site]]
             [environ.core :refer [env]]
-            [lx-sentai.data :refer [sentai]]
+            [lx-sentai.data :refer [getRandomSentai]]
             [ring.adapter.jetty :as jetty]
             [ring.util.http-response :refer :all]
             [schema.core :as s]))
+
+(def ^:private TOKEN "9miNJtx9j5aJ7K88eEgb5CLB")
 
 (defn getSquad
   [text]
   (match text
     "" ["Tony" "Tyrone" "Denise" "Kyla"]
-    _  (split text #" ")))
+    :else  (split text #" ")))
 
 (defn getValues
   [squad, colors]
   (mapv #(str % "--> " (nth colors (rand-int (count colors)))) squad))
 
-(defn getSentai
-  []
-  (sentai (+ (rand-int 40) 1)))
-
 (defn getResponse
   [text]
-  (let [{name :name image :image colors :colors} (getSentai)]
+  (let [{name :name image :image colors :colors} (getRandomSentai)]
     {:response_type "in_channel"
      :attachments
        [{:fields [{:title "Pairings"
@@ -45,9 +43,9 @@
       :return       s/Any
       :query-params [token :- String {text :- String ""}]
       :summary      "Get the Pose with token and text. text defaults to empty string."
-      (match token
-        "9miNJtx9j5aJ7K88eEgb5CLB" (ok (getResponse text))
-        (ok "Sowwy!"))
+      (match (compare token TOKEN)
+        0 (ok (getResponse text))
+        :else (ok "Sowwy!"))
     )
   ))
 

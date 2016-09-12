@@ -1,6 +1,6 @@
 (ns lx-sentai.data)
 
-(def sentai
+(def ^:private sentai
   {1
     {:name "Himitsu Sentai Gorenger"
      :colors ["Red" "Blue" "Yellow" "Pink" "Green"]
@@ -162,3 +162,7 @@
      :colors ["Red" "Blue" "Yellow" "White" "Black"]
      :image "https://s3-us-west-1.amazonaws.com/sentai/40-Zyuohger.jpg"}
    })
+
+(defn getRandomSentai
+  []
+  (sentai (+ (rand-int (count sentai)) 1)))
