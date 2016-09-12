@@ -1,6 +1,14 @@
 # lx-sentai
 
-FIXME
+Grabs a Sentai pose tailored for Slack.
+
+## Usage in Slack
+
+### Default
+`/sentai // Returns a Sentai Pose matching the default Views Squad randomly to each Sentai member`
+
+### With Text
+`/sentai Tony Tone // Returns a Sentai Pose matching Tony and Tone to a random Sentai member`
 
 ## Prerequisites
 
@@ -16,4 +24,4 @@ To start a web server for the application, run:
 
 ## License
 
-Copyright © 2016 FIXME
+Copyright © 2016 MIT LICENSE
