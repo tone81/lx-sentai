@@ -1,23 +1,35 @@
 (ns lx-sentai.handler
-  (:require [clojure.string :refer [join, split]]
+  (:require [clojure.core.match :refer [match]]
+            [clojure.string :refer [join, split]]
             [compojure.api.sweet :refer :all]
             [compojure.handler :refer [site]]
             [environ.core :refer [env]]
             [lx-sentai.data :refer [sentai]]
             [ring.adapter.jetty :as jetty]
-            [ring.util.http-response :refer :all]))
+            [ring.util.http-response :refer :all]
+            [schema.core :as s]))
+
+(defn getSquad
+  [text]
+  (match text
+    "" ["Tony" "Tyrone" "Denise" "Kyla"]
+    _  (split text #" ")))
+
+(defn getValues
+  [squad, colors]
+  (mapv #(str % "--> " (nth colors (rand-int (count colors)))) squad))
 
 (defn getSentai
   []
   (sentai (+ (rand-int 40) 1)))
 
 (defn getResponse
-  []
+  [text]
   (let [{name :name image :image colors :colors} (getSentai)]
     {:response_type "in_channel"
      :attachments
-       [{:fields [{:title name
-                   :value (join " | " colors)
+       [{:fields [{:title "Pairings"
+                   :value (join " | " (getValues (getSquad text) colors))
                    :short true}]
          :title name
          :title_link image
@@ -30,12 +42,12 @@
     :tags ["main"]
 
     (GET "/" []
-      :query-params [token :- String]
-      :summary "Get the Pose"
-      (if (== (compare token "9miNJtx9j5aJ7K88eEgb5CLB") 0)
-        (ok (getResponse))
-        (ok "Sowwy!")
-      )
+      :return       s/Any
+      :query-params [token :- String {text :- String ""}]
+      :summary      "Get the Pose with token and text. text defaults to empty string."
+      (match token
+        "9miNJtx9j5aJ7K88eEgb5CLB" (ok (getResponse text))
+        (ok "Sowwy!"))
     )
   ))
 
