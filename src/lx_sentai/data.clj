@@ -163,6 +163,6 @@
      :image "https://s3-us-west-1.amazonaws.com/sentai/40-Zyuohger.jpg"}
    })
 
-(defn getRandomSentai
+(defn get-random-sentai
   []
   (sentai (+ (rand-int (count sentai)) 1)))

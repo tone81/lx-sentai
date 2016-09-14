@@ -4,14 +4,14 @@
             [compojure.api.sweet :refer :all]
             [compojure.handler :refer [site]]
             [environ.core :refer [env]]
-            [lx-sentai.data :refer [getRandomSentai]]
+            [lx-sentai.data :refer [get-random-sentai]]
             [ring.adapter.jetty :as jetty]
             [ring.util.http-response :refer :all]
             [schema.core :as s]))
 
 (def ^:private TOKEN "9miNJtx9j5aJ7K88eEgb5CLB")
 
-(defn getSquad
+(defn get-squad
   [text]
   (match text
     ""              ["Tony" "Tyrone" "Denise" "Kyla"]
@@ -25,32 +25,32 @@
     "@design"       ["Kay" "Abi" "Alex"]
     :else  (split text #" ")))
 
-(defn getColorIndex
-  [colorCount, indices, index]
-  (if (>= (count indices) colorCount)
+(defn get-color-index
+  [color-count, indices, index]
+  (if (>= (count indices) color-count)
     index
     (if (< (count indices) (count (set (conj indices index))))
       index
-      (getColorIndex colorCount indices (rand-int colorCount)))))
+      (get-color-index color-count indices (rand-int color-count)))))
 
-(defn getValues
+(defn get-values
   [squad, colors]
-  ((defn getValue
-    [squad, colorIndices]
+  ((defn get-value
+    [squad, color-indices]
     (match squad
       [] nil
       [x & xs]
-      (let [colIdx (getColorIndex (count colors) colorIndices (rand-int (count colors)))]
-        (conj (getValue xs, (conj colorIndices colIdx)) (str x " --> " (nth colors colIdx))))))
+      (let [col-idx (get-color-index (count colors) color-indices (rand-int (count colors)))]
+        (conj (get-value xs, (conj color-indices col-idx)) (str x " --> " (nth colors col-idx))))))
         squad []))
 
-(defn getResponse
+(defn get-repsonse
   [text]
-  (let [{name :name image :image colors :colors} (getRandomSentai)]
+  (let [{name :name image :image colors :colors} (get-random-sentai)]
     {:response_type "in_channel"
      :attachments
        [{:fields [{:title "Pairings"
-                   :value (join " | " (getValues (getSquad text) colors))
+                   :value (join " | " (get-values (get-squad text) colors))
                    :short true}]
          :title name
          :title_link image
@@ -67,7 +67,7 @@
       :query-params [token :- String {text :- String ""}]
       :summary      "Get the Pose with token and text. text defaults to empty string."
       (match (compare token TOKEN)
-        0     (ok (getResponse text))
+        0     (ok (get-repsonse text))
         :else (ok "Sowwy!"))
     )
   ))
