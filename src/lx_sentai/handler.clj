@@ -17,7 +17,25 @@
     ""     ["Tony" "Tyrone" "Denise" "Kyla"]
     :else  (split text #" ")))
 
+(defn getColorIndex
+  [colorCount, indices, index]
+  (if (>= (count indices) colorCount)
+    index
+    (if (< (count indices) (count (set (conj indices index))))
+      index
+      (getColorIndex colorCount indices (rand-int colorCount)))))
+
 (defn getValues
+  [squad, colors]
+  ((defn getValue
+    [squad, colorIndices]
+    (match squad
+      []      nil
+      [x & xs]
+      (let [colIdx (getColorIndex (count colors) colorIndices (rand-int (count colors)))]
+        (conj (getValue xs, (conj colorIndices colIdx)) (str x " --> " (nth colors colIdx)))))) squad []))
+
+(defn getValues2
   [squad, colors]
   (mapv #(str % "--> " (nth colors (rand-int (count colors)))) squad))
 
