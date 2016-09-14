@@ -14,7 +14,15 @@
 (defn getSquad
   [text]
   (match text
-    ""     ["Tony" "Tyrone" "Denise" "Kyla"]
+    ""              ["Tony" "Tyrone" "Denise" "Kyla"]
+    "@views"        ["Tony" "Tyrone" "Denise" "Kyla"]
+    "@integrations" ["Alice" "KStar" "Oron"]
+    "@security"     ["Damir" "Karen" "Josh"]
+    "@inbox"        ["Mike" "Taylor" "Elliot"]
+    "@war"          ["Sahil" "Stephen" "James" "Andrew" "Xie"]
+    "@mobile"       ["Matt" "Brian"]
+    "@scripting"    ["Björn" "Wyatt"]
+    "@design"       ["Kay" "Abi" "Alex"]
     :else  (split text #" ")))
 
 (defn getColorIndex
@@ -30,10 +38,11 @@
   ((defn getValue
     [squad, colorIndices]
     (match squad
-      []      nil
+      [] nil
       [x & xs]
       (let [colIdx (getColorIndex (count colors) colorIndices (rand-int (count colors)))]
-        (conj (getValue xs, (conj colorIndices colIdx)) (str x " --> " (nth colors colIdx)))))) squad []))
+        (conj (getValue xs, (conj colorIndices colIdx)) (str x " --> " (nth colors colIdx))))))
+        squad []))
 
 (defn getResponse
   [text]
