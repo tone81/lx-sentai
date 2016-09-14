@@ -12,23 +12,25 @@
 (def ^:private TOKEN "9miNJtx9j5aJ7K88eEgb5CLB")
 
 (defn get-color-index
-  [color-count, indices, index]
-  (if (>= (count indices) color-count)
-    index
-    (if (< (count indices) (count (set (conj indices index))))
+  ([color-count indices] (get-color-index color-count indices (rand-int color-count)))
+  ([color-count indices index]
+    (if (>= (count indices) color-count)
       index
-      (get-color-index color-count indices (rand-int color-count)))))
+      (if (< (count indices) (count (set (conj indices index))))
+        index
+        (recur color-count indices (rand-int color-count))))))
 
 (defn get-values
-  [squad, colors]
+  [squad colors]
   ((defn get-value
-    [squad, color-indices]
-    (match squad
-      [] nil
-      [x & xs]
-      (let [col-idx (get-color-index (count colors) color-indices (rand-int (count colors)))]
-        (conj (get-value xs, (conj color-indices col-idx)) (str x " --> " (nth colors col-idx))))))
-        squad []))
+    ([squad] (get-value squad []))
+    ([squad color-indices]
+      (match squad
+        [] nil
+        [x & xs]
+        (let [col-idx (get-color-index (count colors) color-indices)]
+          (conj (get-value xs, (conj color-indices col-idx)) (str x " --> " (nth colors col-idx)))))))
+          squad))
 
 (defn get-repsonse
   [text]
