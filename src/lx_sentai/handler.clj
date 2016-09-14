@@ -35,10 +35,6 @@
       (let [colIdx (getColorIndex (count colors) colorIndices (rand-int (count colors)))]
         (conj (getValue xs, (conj colorIndices colIdx)) (str x " --> " (nth colors colIdx)))))) squad []))
 
-(defn getValues2
-  [squad, colors]
-  (mapv #(str % "--> " (nth colors (rand-int (count colors)))) squad))
-
 (defn getResponse
   [text]
   (let [{name :name image :image colors :colors} (getRandomSentai)]
