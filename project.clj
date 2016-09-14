@@ -5,7 +5,6 @@
   :license {:name "MIT License"
             :url "https://opensource.org/licenses/MIT"}
   :dependencies [[org.clojure/clojure "1.8.0"]
-                 [org.clojure/core.match "0.3.0-alpha4"]
                  [metosin/compojure-api "1.0.0"]
                  [environ "1.0.0"]
                  [ring/ring-jetty-adapter "1.4.0"]]

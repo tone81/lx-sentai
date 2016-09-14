@@ -1,6 +1,5 @@
 (ns lx-sentai.data
-  (:require [clojure.core.match :refer [match]]
-            [clojure.string :refer [split]]))
+  (:require [clojure.string :refer [split]]))
 
 (def ^:private sentai
   {1
@@ -171,7 +170,7 @@
 
 (defn get-squad
   [text]
-  (match text
+  (case text
     ""              ["Tony" "Tyrone" "Denise" "Kyla"]
     "@views"        ["Tony" "Tyrone" "Denise" "Kyla"]
     "@integrations" ["Alice" "KStar" "Oron"]
@@ -181,4 +180,4 @@
     "@mobile"       ["Matt" "Brian"]
     "@scripting"    ["Björn" "Wyatt"]
     "@design"       ["Kay" "Abi" "Alex"]
-    :else  (split text #" ")))
+    (split text #" ")))
