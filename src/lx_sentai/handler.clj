@@ -28,7 +28,7 @@
       (if (nil? x)
         nil
         (let [col-idx (get-color-index (count colors) color-indices)]
-          (conj (get-value xs, (conj color-indices col-idx)) (str x " --> " (nth colors col-idx)))))))))
+          (cons (str x " --> " (nth colors col-idx)) (get-value xs, (conj color-indices col-idx)))))))))
 
 (defn get-repsonse
   [text]
