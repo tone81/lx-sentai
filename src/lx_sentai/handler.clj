@@ -1,29 +1,15 @@
 (ns lx-sentai.handler
   (:require [clojure.core.match :refer [match]]
-            [clojure.string :refer [join, split]]
+            [clojure.string :refer [join]]
             [compojure.api.sweet :refer :all]
             [compojure.handler :refer [site]]
             [environ.core :refer [env]]
-            [lx-sentai.data :refer [get-random-sentai]]
+            [lx-sentai.data :refer [get-random-sentai, get-squad]]
             [ring.adapter.jetty :as jetty]
             [ring.util.http-response :refer :all]
             [schema.core :as s]))
 
 (def ^:private TOKEN "9miNJtx9j5aJ7K88eEgb5CLB")
-
-(defn get-squad
-  [text]
-  (match text
-    ""              ["Tony" "Tyrone" "Denise" "Kyla"]
-    "@views"        ["Tony" "Tyrone" "Denise" "Kyla"]
-    "@integrations" ["Alice" "KStar" "Oron"]
-    "@security"     ["Damir" "Karen" "Josh"]
-    "@inbox"        ["Mike" "Taylor" "Elliot"]
-    "@war"          ["Sahil" "Stephen" "James" "Andrew" "Xie"]
-    "@mobile"       ["Matt" "Brian"]
-    "@scripting"    ["Björn" "Wyatt"]
-    "@design"       ["Kay" "Abi" "Alex"]
-    :else  (split text #" ")))
 
 (defn get-color-index
   [color-count, indices, index]
