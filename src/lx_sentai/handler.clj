@@ -22,12 +22,13 @@
 (defn get-values
   [squad colors]
   ((defn get-value
+    ([] (get-value squad))
     ([squad] (get-value squad []))
     ([[x & xs] color-indices]
       (if (nil? x)
         nil
         (let [col-idx (get-color-index (count colors) color-indices)]
-          (conj (get-value xs, (conj color-indices col-idx)) (str x " --> " (nth colors col-idx))))))) squad))
+          (conj (get-value xs, (conj color-indices col-idx)) (str x " --> " (nth colors col-idx)))))))))
 
 (defn get-repsonse
   [text]
