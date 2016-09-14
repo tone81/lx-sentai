@@ -1,6 +1,5 @@
 (ns lx-sentai.handler
-  (:require [clojure.core.match :refer [match]]
-            [clojure.string :refer [join]]
+  (:require [clojure.string :refer [join]]
             [compojure.api.sweet :refer :all]
             [compojure.handler :refer [site]]
             [environ.core :refer [env]]
@@ -24,13 +23,11 @@
   [squad colors]
   ((defn get-value
     ([squad] (get-value squad []))
-    ([squad color-indices]
-      (match squad
-        [] nil
-        [x & xs]
+    ([[x & xs] color-indices]
+      (if (nil? x)
+        nil
         (let [col-idx (get-color-index (count colors) color-indices)]
-          (conj (get-value xs, (conj color-indices col-idx)) (str x " --> " (nth colors col-idx)))))))
-          squad))
+          (conj (get-value xs, (conj color-indices col-idx)) (str x " --> " (nth colors col-idx))))))) squad))
 
 (defn get-repsonse
   [text]
@@ -54,9 +51,9 @@
       :return       s/Any
       :query-params [token :- String {text :- String ""}]
       :summary      "Get the Pose with token and text. text defaults to empty string."
-      (match (compare token TOKEN)
-        0     (ok (get-repsonse text))
-        :else (ok "Sowwy!"))
+      (if (== (compare token TOKEN) 0)
+        (ok (get-repsonse text))
+        (ok "Sowwy!"))
     )
   ))
 
