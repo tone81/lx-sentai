@@ -171,13 +171,14 @@
 (defn get-squad
   [text]
   (case text
-    ""              ["Tony" "Tyrone" "Denise" "Kyla"]
-    "@views"        ["Tony" "Tyrone" "Denise" "Kyla"]
-    "@integrations" ["Alice" "KStar" "Oron"]
-    "@security"     ["Damir" "Karen" "Josh"]
-    "@inbox"        ["Mike" "Taylor" "Elliot"]
-    "@war"          ["Sahil" "Stephen" "James" "Andrew" "Xie"]
-    "@mobile"       ["Matt" "Brian"]
-    "@scripting"    ["Björn" "Wyatt"]
-    "@design"       ["Kay" "Abi" "Alex"]
+    ""                  ["Tony" "Tyrone" "Denise" "Kyla"]
+    "@views"            ["Tony" "Tyrone" "Denise" "Kyla"]
+    "@integrations"     ["Alice" "KStar" "Oron"]
+    "@security"         ["Damir" "Karen" "Josh"]
+    "@inbox"            ["Mike" "Taylor" "Elliot"]
+    "@war"              ["Sahil" "Stephen" "James" "Andrew" "Xie"]
+    "@mobile"           ["Matt" "Brian"]
+    "@scripting"        ["Björn" "Wyatt"]
+    "@design"           ["Kay" "Abi" "Alex"]
+    "@customer_success" ["Natasha", "Caroline", "Chris", "Shane", "Merijn"]
     (split text #" ")))
