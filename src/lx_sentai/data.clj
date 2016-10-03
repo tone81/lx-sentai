@@ -68,7 +68,7 @@
      :image "https://s3-us-west-1.amazonaws.com/sentai/16-Sentai_Zyuranger.jpg"}
    17
     {:name "Gosei Sentai Dairanger"
-     :colors ["Red" "Blue" "Yellow" "Pink" "Green" "White"]
+     :colors ["Red" "Blue" "Yellow" "Pink" "Green"]
      :image "https://s3-us-west-1.amazonaws.com/sentai/17-Gosei_Sentai_Dairanger.jpg"}
    18
     {:name "Ninja Sentai Kakuranger"
