@@ -180,5 +180,5 @@
     "@mobile"           ["Matt" "Brian"]
     "@scripting"        ["Björn" "Wyatt"]
     "@design"           ["Kay" "Abi" "Alex"]
-    "@customer_success" ["Natasha", "Caroline", "Chris", "Shane", "Merijn"]
+    "@customer_success" ["Natasha", "Caroline", "Chris", "Shane", "Merijn" "Maniza"]
     (split text #" ")))
