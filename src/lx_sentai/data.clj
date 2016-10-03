@@ -156,7 +156,7 @@
      :image "https://s3-us-west-1.amazonaws.com/sentai/38-toqger.jpg"}
    39
     {:name "Shuriken Sentai Ninninger"
-     :colors ["Red" "Blue" "Yellow" "Pink" "White" "Gold"]
+     :colors ["Red" "Blue" "Yellow" "Pink" "White"]
      :image "https://s3-us-west-1.amazonaws.com/sentai/39-Ninneger.jpg"}
    40
     {:name "Doubutsu Sentai Zyuohger"
