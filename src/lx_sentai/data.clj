@@ -20,7 +20,7 @@
      :image "https://s3-us-west-1.amazonaws.com/sentai/04-denshi_sentai_denizman.jpg"}
    5
     {:name "Taiyo Sentai Sun Vulcan"
-     :colors ["Red" "Blue" "Yellow" "Pink" "Green"]
+     :colors ["Red" "Blue" "Yellow"]
      :image "https://s3-us-west-1.amazonaws.com/sentai/05-sun_vulcan.jpg"}
    6
     {:name "Dai Sentai Goggle V"
@@ -33,10 +33,10 @@
    8
     {:name "Choudenshi Bioman"
      :colors ["Red" "Blue" "Yellow" "Pink" "Green"]
-     :image "https://s3-us-west-1.amazonaws.com/sentai/08-Bioman.gif"}
+     :image "https://s3-us-west-1.amazonaws.com/sentai/08-Bioman.jpg"}
    9
     {:name "Dengeki Sentai Changeman"
-     :colors ["Red" "Blue" "Yellow" "Pink" "Black"]
+     :colors ["Red" "Blue" "White" "Pink" "Black"]
      :image "https://s3-us-west-1.amazonaws.com/sentai/09-changemang.gif"}
    10
     {:name "Choushinsei Flashman"
@@ -45,7 +45,7 @@
    11
     {:name "Hikari Sentai Maskman"
      :colors ["Red" "Blue" "Yellow" "Pink" "Black" "Green"]
-     :image "https://s3-us-west-1.amazonaws.com/sentai/11-Maskmen.png"}
+     :image "https://s3-us-west-1.amazonaws.com/sentai/11-Maskmen.jpg"}
    12
     {:name "Choujuu Sentai Liveman"
      :colors ["Red" "Blue" "Yellow" "Green" "Black"]
@@ -57,7 +57,7 @@
    14
     {:name "Chikyuu Sentai Fiveman"
      :colors ["Red" "Blue" "Yellow" "Pink" "Black"]
-     :image "https://s3-us-west-1.amazonaws.com/sentai/14-Fiveman.gif"}
+     :image "https://s3-us-west-1.amazonaws.com/sentai/14-Fiveman.jpg"}
    15
     {:name "Choujin Sentai Jetman"
      :colors ["Red" "Blue" "Yellow" "Pink" "Black"]
@@ -116,7 +116,7 @@
      :image "https://s3-us-west-1.amazonaws.com/sentai/28-Dekarangers.jpg"}
    29
     {:name "Mahou Sentai Magiranger"
-     :colors ["Red" "Blue" "Yellow" "Pink" "Green" "Black Gold" "Metallic Red" "White"]
+     :colors ["Red" "Blue" "Yellow" "Pink" "Green" "Black Gold"]
      :image "https://s3-us-west-1.amazonaws.com/sentai/29-Magirangers.jpg"}
    30
     {:name "GoGo Sentai Boukenger"
@@ -136,7 +136,7 @@
      :image "https://s3-us-west-1.amazonaws.com/sentai/33-Shinkeger.jpg"}
    34
     {:name "Tensou Sentai Goseiger"
-     :colors ["Red" "Blue" "Yellow" "Pink" "Black"]
+     :colors ["Red" "Blue" "Yellow" "Pink" "Black" "Cyborg"]
      :image "https://s3-us-west-1.amazonaws.com/sentai/34-Goseiger.jpg"}
    35
     {:name "Kaizoku Sentai Gokaiger"
@@ -144,8 +144,8 @@
      :image "https://s3-us-west-1.amazonaws.com/sentai/35-Gokaiger.jpg"}
    36
     {:name "Tokumei Sentai Go-Busters"
-     :colors ["Red" "Blue" "Yellow" "Cyan" "Gold" "Creeper Red"]
-     :image "https://s3-us-west-1.amazonaws.com/sentai/36-Gobusters.png"}
+     :colors ["Red" "Blue" "Yellow" "Cyan" "Gold"]
+     :image "https://s3-us-west-1.amazonaws.com/sentai/36-Gobusters.jpg"}
    37
     {:name "Zyuden Sentai Kyoryuger"
      :colors ["Navy Blue" "Purple" "Cyan" "Blue" "Grey" "Silver"]
