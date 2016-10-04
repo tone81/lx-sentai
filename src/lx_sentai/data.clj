@@ -171,12 +171,13 @@
 (defn get-squad
   [text]
   (case text
-    ""                  ["Tony" "Tyrone" "Denise" "Kyla"]
-    "@views"            ["Tony" "Tyrone" "Denise" "Kyla"]
+    ""                  ["Tony" "Tyrone" "Denise"]
+    "@views"            ["Tony" "Tyrone" "Denise"]
     "@integrations"     ["Alice" "KStar" "Oron"]
     "@security"         ["Damir" "Karen" "Josh"]
     "@inbox"            ["Mike" "Taylor" "Elliot"]
-    "@war"              ["Sahil" "Stephen" "James" "Andrew" "Xie"]
+    "@records"          ["Sahil" "Andrew"]
+    "@workflows"        ["Stephen" "James" "Xie"]
     "@mobile"           ["Matt" "Brian"]
     "@scripting"        ["Björn" "Wyatt"]
     "@design"           ["Kay" "Abi" "Alex"]
