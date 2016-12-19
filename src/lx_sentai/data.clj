@@ -162,6 +162,18 @@
     {:name "Doubutsu Sentai Zyuohger"
      :colors ["Red" "Blue" "Yellow" "White" "Black"]
      :image "https://s3-us-west-1.amazonaws.com/sentai/40-Zyuohger.jpg"}
+   41
+    {:name "Sailor Senshi"
+     :colors ["Moon" "Mercury" "Mars" "Jupiter" "Venus"]
+     :image "https://s3-us-west-1.amazonaws.com/sentai/41-sailor-senshi.png"}
+   42
+    {:name "Ginyu Toku Sentai"
+     :colors ["Captain Ginyu" "Jeice" "Recoome" "Burter" "Guido"]
+     :image "https://s3-us-west-1.amazonaws.com/sentai/42-ginyu-toku-sentai.png"}
+   43
+    {:name "Saint Seiya Omega"
+     :colors ["Souma" "Haruto" "Eden" "Ryuhou" "Yuna" "Koga"]
+     :image "https://s3-us-west-1.amazonaws.com/sentai/43-saint-seiya-omega.jpg"}
    })
 
 (defn get-random-sentai
@@ -178,6 +190,6 @@
     "@records"          ["Sahil" "Andrew" "Bryan"]
     "@workflows"        ["Stephen" "James" "Xie" "Matt" "Sara"]
     "@scripting"        ["Björn" "Wyatt"]
-    "@design"           ["Kay" "Abi"]
+    "@design"           ["Kay" "Abi" "Sharon"]
     "@customer_success" ["Natasha" "Caroline" "Chris" "Shane" "Merijn" "Maniza" "Alex" "Katy"]
     (split text #" ")))
