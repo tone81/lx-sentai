@@ -183,8 +183,8 @@
 (defn get-squad
   [text]
   (case text
-    ""                  ["Tony" "Tyrone" "Denise"]
-    "@views"            ["Tony" "Tyrone" "Denise" "Alice"]
+    ""                  ["Tony" "Tyrone" "Denise" "Alice"]
+    "@insights"         ["Tony" "Tyrone" "Denise" "Alice" "Frank"]
     "@security"         ["Damir" "Karen" "Josh" "KStar"]
     "@spaces"           ["Mike" "Taylor" "Elliot" "Kyla"]
     "@records"          ["Sahil" "Andrew" "Bryan"]
