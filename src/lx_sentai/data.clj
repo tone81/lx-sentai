@@ -174,6 +174,34 @@
     {:name "Saint Seiya Omega"
      :colors ["Souma" "Haruto" "Eden" "Ryuhou" "Yuna" "Koga"]
      :image "https://s3-us-west-1.amazonaws.com/sentai/43-saint-seiya-omega.jpg"}
+   44
+    {:name "Robots"
+     :colors ["Pink" "Black" "Regal White" "Red" "Yellow" "Blue"]
+     :image "https://s3-us-west-1.amazonaws.com/sentai/44-robots.jpg"}
+   45
+    {:name "Squishies"
+     :colors ["Tinky Winky" "Dipsy" "Laa Laa" "Po"]
+     :image "https://s3-us-west-1.amazonaws.com/sentai/45-squishies.jpeg"}
+   46
+    {:name "Red Power"
+     :colors ["Go ONNNN!" "I Look Like a Monster Truck" "Hey Ya!" "Stoic Ranger" "Water Gun Ranger" "Monster Hand POW!"]
+     :image "https://s3-us-west-1.amazonaws.com/sentai/46-red-power.jpeg"}
+   47
+    {:name "Best Friends Yearbook Shot"
+     :colors ["Red" "Blue" "Pink" "Yellow" "Black" "Grey Plaid"]
+     :image "https://s3-us-west-1.amazonaws.com/sentai/47-best-friends.jpg"}
+   48
+    {:name "Hanging Out Friends"
+     :colors ["Blue" "Black" "Yellow" "Smirky Pink" "Constipated Red"]
+     :image "https://s3-us-west-1.amazonaws.com/sentai/48-best-friends-2.jpeg"}
+   49
+    {:name "Hanging Out at the Gym"
+     :colors ["Blue" "Pink" "Black" "Yellow" "Chilled-Out Red"]
+     :image "https://s3-us-west-1.amazonaws.com/sentai/49-best-friends-3.jpg"}
+   50
+    {:name "Party Time"
+     :colors ["Red" "Yellow" "Blue" "Green" "Orange-Yellow"]
+     :image "https://s3-us-west-1.amazonaws.com/sentai/50-party-colors.jpeg"}   
    })
 
 (defn get-random-sentai
