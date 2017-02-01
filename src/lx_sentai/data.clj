@@ -192,7 +192,7 @@
      :image "https://s3-us-west-1.amazonaws.com/sentai/47-best-friends.jpg"}
    48
     {:name "Hanging Out Friends"
-     :colors ["Blue" "Black" "Yellow" "Smirky Pink" "Constipated Red"]
+     :colors ["In-Love-with-Pink Blue" "Bored Black" "Creepy Yellow" "Smirky Pink" "Constipated Red"]
      :image "https://s3-us-west-1.amazonaws.com/sentai/48-best-friends-2.jpeg"}
    49
     {:name "Hanging Out at the Gym"
