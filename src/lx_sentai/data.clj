@@ -200,7 +200,7 @@
      :image "https://s3-us-west-1.amazonaws.com/sentai/49-best-friends-3.jpg"}
    50
     {:name "Party Time"
-     :colors ["Red" "Yellow" "Blue" "Green" "Orange-Yellow"]
+     :colors ["In-Love-with-Pink Blue" "BB8 Orange-Yellow" "Creepy Yellow" "Three-Sided Green" "Constipated Red"]
      :image "https://s3-us-west-1.amazonaws.com/sentai/50-party-colors.jpeg"}   
    })
 
