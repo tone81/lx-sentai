@@ -184,7 +184,7 @@
      :image "https://s3-us-west-1.amazonaws.com/sentai/45-squishies.jpeg"}
    46
     {:name "Red Power"
-     :colors ["Go ONNNN!" "I Look Like a Monster Truck" "Hey Ya!" "Stoic Ranger" "Water Gun Ranger" "Monster Hand POW!"]
+     :colors ["Go ONNNN!" "I Look Like a Monster Truck" "Hey Ya!" "Stoic Ranger" "Water Gun Ranger" "Monster Hand POW!" "Waldo"]
      :image "https://s3-us-west-1.amazonaws.com/sentai/46-red-power.jpeg"}
    47
     {:name "Best Friends Yearbook Shot"
