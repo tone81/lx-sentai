@@ -182,26 +182,6 @@
     {:name "Squishies"
      :colors ["Tinky Winky" "Dipsy" "Laa Laa" "Po"]
      :image "https://s3-us-west-1.amazonaws.com/sentai/45-squishies.jpeg"}
-   46
-    {:name "Red Power"
-     :colors ["Go ONNNN!" "I Look Like a Monster Truck" "Hey Ya!" "Stoic Ranger" "Water Gun Ranger" "Monster Hand POW!" "Waldo"]
-     :image "https://s3-us-west-1.amazonaws.com/sentai/46-red-power.jpeg"}
-   47
-    {:name "Best Friends Yearbook Shot"
-     :colors ["Red" "Blue" "Pink" "Yellow" "Black" "Grey Plaid"]
-     :image "https://s3-us-west-1.amazonaws.com/sentai/47-best-friends.jpg"}
-   48
-    {:name "Hanging Out Friends"
-     :colors ["In-Love-with-Pink Blue" "Bored Black" "Creepy Yellow" "Smirky Pink" "Constipated Red"]
-     :image "https://s3-us-west-1.amazonaws.com/sentai/48-best-friends-2.jpeg"}
-   49
-    {:name "Hanging Out at the Gym"
-     :colors ["Blue" "Pink" "Black" "Yellow" "Chilled-Out Red"]
-     :image "https://s3-us-west-1.amazonaws.com/sentai/49-best-friends-3.jpg"}
-   50
-    {:name "Party Time"
-     :colors ["In-Love-with-Pink Blue" "BB8 Orange-Yellow" "Creepy Yellow" "Three-Sided Green" "Constipated Red"]
-     :image "https://s3-us-west-1.amazonaws.com/sentai/50-party-colors.jpeg"}   
    })
 
 (defn get-random-sentai
