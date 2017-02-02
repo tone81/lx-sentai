@@ -12,7 +12,7 @@
      :image "https://s3-us-west-1.amazonaws.com/sentai/02-JAKQ.jpg"}
    3
     {:name "Battle Fever J"
-     :colors ["Red" "Blue" "Black" "Orange" "Whack White"]
+     :colors ["Red" "Blue" "Green Black" "Orange" "Whack White aka No Pants"]
      :image "https://s3-us-west-1.amazonaws.com/sentai/03-Battle_Fever_J.jpg"}
    4
     {:name "Denshi Sentai Denziman"
@@ -104,7 +104,7 @@
      :image "https://s3-us-west-1.amazonaws.com/sentai/25-Gaorangers.jpg"}
    26
     {:name "Ninpu Sentai Hurricaneger"
-     :colors ["Red" "Green" "Yellow" "Blue" "Navy Blue" "Crimson"]
+     :colors ["Red" "Green" "Yellow" "Cerulean" "Navy Blue" "Crimson Black"]
      :image "https://s3-us-west-1.amazonaws.com/sentai/26-Hurricaneger.jpg"}
    27
     {:name "Bakuryuu Sentai Abaranger"
@@ -136,7 +136,7 @@
      :image "https://s3-us-west-1.amazonaws.com/sentai/33-Shinkeger.jpg"}
    34
     {:name "Tensou Sentai Goseiger"
-     :colors ["Red" "Blue" "Yellow" "Pink" "Black" "Cyborg"]
+     :colors ["Red" "Blue" "Yellow" "Pink" "Black non-Cyborg" "Black Cyborg"]
      :image "https://s3-us-west-1.amazonaws.com/sentai/34-Goseiger.jpg"}
    35
     {:name "Kaizoku Sentai Gokaiger"
@@ -191,5 +191,5 @@
     "@workflows"        ["Stephen" "James" "Xie" "Matt" "Sara"]
     "@scripting"        ["Björn" "Wyatt"]
     "@design"           ["Kay" "Abi" "Sharon"]
-    "@customer_success" ["Natasha" "Caroline" "Chris" "Shane" "Merijn" "Maniza" "Alex" "Katy"]
+    "@customer_success" ["Natasha" "Caroline" "Chris" "Shane" "Merijn" "Maniza" "Alex" "Katy" "Jonas"]
     (split text #" ")))
