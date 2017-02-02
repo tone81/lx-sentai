@@ -174,6 +174,14 @@
     {:name "Saint Seiya Omega"
      :colors ["Souma" "Haruto" "Eden" "Ryuhou" "Yuna" "Koga"]
      :image "https://s3-us-west-1.amazonaws.com/sentai/43-saint-seiya-omega.jpg"}
+   44
+    {:name "Robots"
+     :colors ["Pink" "Black" "Regal White" "Red" "Yellow" "Blue"]
+     :image "https://s3-us-west-1.amazonaws.com/sentai/44-robots.jpg"}
+   45
+    {:name "Squishies"
+     :colors ["Tinky Winky" "Dipsy" "Laa Laa" "Po"]
+     :image "https://s3-us-west-1.amazonaws.com/sentai/45-squishies.jpeg"}
    })
 
 (defn get-random-sentai
