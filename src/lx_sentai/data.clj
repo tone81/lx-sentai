@@ -182,6 +182,10 @@
     {:name "Squishies"
      :colors ["Tinky Winky" "Dipsy" "Laa Laa" "Po"]
      :image "https://s3-us-west-1.amazonaws.com/sentai/45-squishies.jpeg"}
+   46
+    {:name "Uchu Sentai Kyuranger"
+     :colors ["Red" "Orange" "Blue" "Gold" "Black" "Silver" "Green" "Pink" "Yellow"]
+     :image "https://s3-us-west-1.amazonaws.com/sentai/46-kyuranger.jpg"}
    })
 
 (defn get-random-sentai
