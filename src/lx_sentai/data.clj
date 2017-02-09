@@ -3,11 +3,11 @@
 
 (def ^:private sentai
   {1
-    {:name "Himitsu Sentai Gorenger"
+    {:name "Himitsu Sentai Gorenger (Secret Squadron FiveRangers)"
      :colors ["Red" "Blue" "Yellow" "Pink" "Green"]
      :image "https://s3-us-west-1.amazonaws.com/sentai/01-gorenger.jpg"}
    2
-    {:name "J.A.K.Q. Dengekitai"
+    {:name "J.A.K.Q. Dengekitai (J.A.K.Q. Blitzkrieg Squad)"
      :colors ["White" "Red" "Blue" "Pink" "Green"]
      :image "https://s3-us-west-1.amazonaws.com/sentai/02-JAKQ.jpg"}
    3
@@ -15,59 +15,59 @@
      :colors ["Red" "Blue" "Green Black" "Orange" "Whack White aka No Pants"]
      :image "https://s3-us-west-1.amazonaws.com/sentai/03-Battle_Fever_J.jpg"}
    4
-    {:name "Denshi Sentai Denziman"
+    {:name "Denshi Sentai Denziman (Electronic Squadron Denziman)"
      :colors ["Red" "Blue" "Yellow" "Pink" "Green"]
      :image "https://s3-us-west-1.amazonaws.com/sentai/04-denshi_sentai_denizman.jpg"}
    5
-    {:name "Taiyo Sentai Sun Vulcan"
+    {:name "Taiyo Sentai Sun Vulcan (Solar Squadron Sun Vulcan)"
      :colors ["Red" "Blue" "Yellow"]
      :image "https://s3-us-west-1.amazonaws.com/sentai/05-sun_vulcan.jpg"}
    6
-    {:name "Dai Sentai Goggle V"
+    {:name "Dai Sentai Goggle V (Great Squadron Goggle Five)"
      :colors ["Red" "Blue" "Yellow" "Pink" "Black"]
      :image "https://s3-us-west-1.amazonaws.com/sentai/06-goggle.jpg"}
    7
-    {:name "Kagaku Sentai Dynaman"
+    {:name "Kagaku Sentai Dynaman (Scientific Squadron Dynaman)"
      :colors ["Red" "Blue" "Yellow" "Pink" "Black"]
      :image "https://s3-us-west-1.amazonaws.com/sentai/07-Dynaman.jpg"}
    8
-    {:name "Choudenshi Bioman"
+    {:name "Choudenshi Bioman (Super Electronic Bioman)"
      :colors ["Red" "Blue" "Yellow" "Pink" "Green"]
      :image "https://s3-us-west-1.amazonaws.com/sentai/08-Bioman.jpg"}
    9
-    {:name "Dengeki Sentai Changeman"
+    {:name "Dengeki Sentai Changeman (Blitzkrieg Squadron Changeman)"
      :colors ["Red" "Blue" "White" "Pink" "Black"]
      :image "https://s3-us-west-1.amazonaws.com/sentai/09-changemang.gif"}
    10
-    {:name "Choushinsei Flashman"
+    {:name "Choushinsei Flashman (Supernova Flashman)"
      :colors ["Red" "Blue" "Yellow" "Pink" "Green"]
      :image "https://s3-us-west-1.amazonaws.com/sentai/10-Flashman.jpg"}
    11
-    {:name "Hikari Sentai Maskman"
+    {:name "Hikari Sentai Maskman (Light Squadron Maskman)"
      :colors ["Red" "Blue" "Yellow" "Pink" "Black" "Green"]
      :image "https://s3-us-west-1.amazonaws.com/sentai/11-Maskmen.jpg"}
    12
-    {:name "Choujuu Sentai Liveman"
+    {:name "Choujuu Sentai Liveman (Super Beast Squadron Liveman)"
      :colors ["Red" "Blue" "Yellow" "Green" "Black"]
      :image "https://s3-us-west-1.amazonaws.com/sentai/12-Liveman.jpg"}
    13
-    {:name "Kousoku Sentai Turboranger"
+    {:name "Kousoku Sentai Turboranger (High Speed Squadron Turboranger)"
      :colors ["Red" "Blue" "Yellow" "Pink" "Black"]
      :image "https://s3-us-west-1.amazonaws.com/sentai/13-turbo_ranger.jpg"}
    14
-    {:name "Chikyuu Sentai Fiveman"
+    {:name "Chikyuu Sentai Fiveman (Earth Squadron Fiveman)"
      :colors ["Red" "Blue" "Yellow" "Pink" "Black"]
      :image "https://s3-us-west-1.amazonaws.com/sentai/14-Fiveman.jpg"}
    15
-    {:name "Choujin Sentai Jetman"
+    {:name "Choujin Sentai Jetman (Birdman Squadron Jetman)"
      :colors ["Red" "Blue" "Yellow" "Pink" "Black"]
      :image "https://s3-us-west-1.amazonaws.com/sentai/15-BirdmanTaskforceJetman.jpg"}
    16
-    {:name "Kyōryū Sentai Zyuranger"
+    {:name "Kyōryū Sentai Zyuranger (Dinosaur Squadron Zyuranger)"
      :colors ["Red" "Blue" "Yellow" "Pink" "Black" "Green"]
      :image "https://s3-us-west-1.amazonaws.com/sentai/16-Sentai_Zyuranger.jpg"}
    17
-    {:name "Gosei Sentai Dairanger"
+    {:name "Gosei Sentai Dairanger (Five-Star Squadron Dairanger)"
      :colors ["Red" "Blue" "Yellow" "Pink" "Green"]
      :image "https://s3-us-west-1.amazonaws.com/sentai/17-Gosei_Sentai_Dairanger.jpg"}
    18
@@ -75,27 +75,27 @@
      :colors ["Red" "Blue" "Yellow" "White" "Black"]
      :image "https://s3-us-west-1.amazonaws.com/sentai/18-Sentai_Kakurangers.jpg"}
    19
-    {:name "Chouriki Sentai Ohranger"
+    {:name "Chouriki Sentai Ohranger (Super-Powered Squadron Ohranger)"
      :colors ["Red" "Blue" "Yellow" "Pink" "Green" "Black"]
      :image "https://s3-us-west-1.amazonaws.com/sentai/19-Ohranger_With_Kingranger.jpg"}
    20
-    {:name "Gekisou Sentai Carranger"
+    {:name "Gekisou Sentai Carranger (Racing Squadron Carranger)"
      :colors ["Red" "Blue" "Yellow" "Pink" "Green" "White?"]
      :image "https://s3-us-west-1.amazonaws.com/sentai/20-Carrangers-white_racer.jpg"}
    21
-    {:name "Denji Sentai Megaranger"
+    {:name "Denji Sentai Megaranger (Electromagnetic Squadron Megaranger)"
      :colors ["Red" "Blue" "Yellow" "Pink" "Black" "White"]
      :image "https://s3-us-west-1.amazonaws.com/sentai/21-IS_Rangers.jpg"}
    22
-    {:name "Seijuu Sentai Gingaman"
+    {:name "Seijuu Sentai Gingaman (Starbeast Squadron Gingaman)"
      :colors ["Red" "Blue" "Yellow" "Pink" "Green" "Caped Black"]
      :image "https://s3-us-west-1.amazonaws.com/sentai/22-StarBeast_Squadron_Star_Men!.jpg"}
    23
-    {:name "Kyukyu Sentai GoGo-V"
+    {:name "Kyukyu Sentai GoGo-V (Rescue Squadron GoGoFive)"
      :colors ["Red" "Blue" "Yellow" "Pink" "Green" "Black Gold"]
      :image "https://s3-us-west-1.amazonaws.com/sentai/23-GoGo-V_with_Sieg.jpg"}
    24
-    {:name "Mirai Sentai Timeranger"
+    {:name "Mirai Sentai Timeranger (Future Squadron Timeranger)"
      :colors ["Red" "Blue" "Yellow" "Pink" "Black" "The Other Red"]
      :image "https://s3-us-west-1.amazonaws.com/sentai/24-Time.jpg"}
    25
@@ -205,7 +205,7 @@
     "@spaces"           ["Mike" "Taylor" "Elliot" "Kyla"]
     "@records"          ["Sahil" "Andrew" "Bryan"]
     "@workflows"        ["Stephen" "James" "Xie" "Matt" "Sara"]
-    "@scripting"        ["Björn" "Wyatt"]
+    "@extensions"       ["Björn" "Wyatt"]
     "@design"           ["Kay" "Abi" "Sharon"]
-    "@customer_success" ["Natasha" "Caroline" "Chris" "Shane" "Merijn" "Maniza" "Alex" "Katy" "Jonas"]
+    "@customer_success" ["Natasha" "Caroline" "Chris" "Shane" "Merijn" "Maniza" "Alex" "Katy" "Jonas" "Martijn"]
     (split text #" ")))
