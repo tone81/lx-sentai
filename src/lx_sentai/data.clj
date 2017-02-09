@@ -186,6 +186,10 @@
     {:name "Uchu Sentai Kyuranger"
      :colors ["Red" "Orange" "Blue" "Gold" "Black" "Silver" "Green" "Pink" "Yellow"]
      :image "https://s3-us-west-1.amazonaws.com/sentai/46-kyuranger.jpg"}
+   47
+    {:name "Soldiers of the Outer Solar System"
+     :colors ["Saturn" "Uranus" "Neptune" "Pluto (dwarf planet now)"]
+     :image "https://s3-us-west-1.amazonaws.com/sentai/47-outer-senshi.jpg"}
    })
 
 (defn get-random-sentai
