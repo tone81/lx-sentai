@@ -99,7 +99,7 @@
      :colors ["Red" "Blue" "Yellow" "Pink" "Black" "The Other Red"]
      :image "https://s3-us-west-1.amazonaws.com/sentai/24-Time.jpg"}
    25
-    {:name "Hyakujuu Sentai Gaoranger"
+    {:name "Hyakujuu Sentai Gaoranger (Hundred-beasts Squadron Gaoranger)"
      :colors ["Red" "Blue" "Yellow" "Pink" "Black" "Platinum"]
      :image "https://s3-us-west-1.amazonaws.com/sentai/25-Gaorangers.jpg"}
    26
@@ -107,23 +107,23 @@
      :colors ["Red" "Green" "Yellow" "Cerulean" "Navy Blue" "Crimson Black"]
      :image "https://s3-us-west-1.amazonaws.com/sentai/26-Hurricaneger.jpg"}
    27
-    {:name "Bakuryuu Sentai Abaranger"
+    {:name "Bakuryuu Sentai Abaranger (Blastasaur Squadron Rampage Ranger)"
      :colors ["Red" "Blue" "Yellow"]
      :image "https://s3-us-west-1.amazonaws.com/sentai/27-Abaranger.jpg"}
    28
-    {:name "Tokusou Sentai Dekaranger"
+    {:name "Tokusou Sentai Dekaranger (Special Investigation Squadron Dekaranger)"
      :colors ["Red" "Blue" "Yellow" "Pink" "Green" "White"]
      :image "https://s3-us-west-1.amazonaws.com/sentai/28-Dekarangers.jpg"}
    29
-    {:name "Mahou Sentai Magiranger"
+    {:name "Mahou Sentai Magiranger (Magical Squadron Magiranger)"
      :colors ["Red" "Blue" "Yellow" "Pink" "Green" "Black Gold"]
      :image "https://s3-us-west-1.amazonaws.com/sentai/29-Magirangers.jpg"}
    30
-    {:name "GoGo Sentai Boukenger"
+    {:name "GoGo Sentai Boukenger (Rumbling Squadron Boukenger)"
      :colors ["Red" "Blue" "Yellow" "Pink" "Black" "Gold" "White"]
      :image "https://s3-us-west-1.amazonaws.com/sentai/30-Boukengers-Zubaan.jpg"}
    31
-    {:name "Juken Sentai Gekiranger"
+    {:name "Juken Sentai Gekiranger (Beast-Fist Squadron Fierce Spirit Ranger)"
      :colors ["Red" "Blue" "Yellow" "White" "Purple"]
      :image "https://s3-us-west-1.amazonaws.com/sentai/31-Gekiranger.jpg"}
    32
@@ -135,31 +135,31 @@
      :colors ["Red" "Blue" "Yellow" "Pink" "Green"]
      :image "https://s3-us-west-1.amazonaws.com/sentai/33-Shinkeger.jpg"}
    34
-    {:name "Tensou Sentai Goseiger"
+    {:name "Tensou Sentai Goseiger (Heavenly Armament Squadron Goseiger)"
      :colors ["Red" "Blue" "Yellow" "Pink" "Black non-Cyborg" "Black Cyborg"]
      :image "https://s3-us-west-1.amazonaws.com/sentai/34-Goseiger.jpg"}
    35
-    {:name "Kaizoku Sentai Gokaiger"
+    {:name "Kaizoku Sentai Gokaiger (Pirate Squadron Gokaiger)"
      :colors ["Red" "Blue" "Yellow" "Pink" "Green"]
      :image "https://s3-us-west-1.amazonaws.com/sentai/35-Gokaiger.jpg"}
    36
-    {:name "Tokumei Sentai Go-Busters"
+    {:name "Tokumei Sentai Go-Busters (Special Operations Squadron Go-Busters)"
      :colors ["Red" "Blue" "Yellow" "Cyan" "Gold"]
      :image "https://s3-us-west-1.amazonaws.com/sentai/36-Gobusters.jpg"}
    37
-    {:name "Zyuden Sentai Kyoryuger"
+    {:name "Zyuden Sentai Kyoryuger (Beast Power Squadron Dinosaur Ranger)"
      :colors ["Navy Blue" "Purple" "Cyan" "Blue" "Grey" "Silver"]
      :image "https://s3-us-west-1.amazonaws.com/sentai/37-Kyorangers.png"}
    38
-    {:name "Ressha Sentai ToQger"
+    {:name "Ressha Sentai ToQger (Train Squadron Limited Express Ranger)"
      :colors ["Red" "Blue" "Yellow" "Pink" "Green" "Purple" "Orange"]
      :image "https://s3-us-west-1.amazonaws.com/sentai/38-toqger.jpg"}
    39
-    {:name "Shuriken Sentai Ninninger"
+    {:name "Shuriken Sentai Ninninger (Shuriken Squadron Ninninger)"
      :colors ["Red" "Blue" "Yellow" "Pink" "White"]
      :image "https://s3-us-west-1.amazonaws.com/sentai/39-Ninneger.jpg"}
    40
-    {:name "Doubutsu Sentai Zyuohger"
+    {:name "Doubutsu Sentai Zyuohger (Animal Squadron Beast King Ranger)"
      :colors ["Red" "Blue" "Yellow" "White" "Black"]
      :image "https://s3-us-west-1.amazonaws.com/sentai/40-Zyuohger.jpg"}
    41
@@ -183,7 +183,7 @@
      :colors ["Tinky Winky" "Dipsy" "Laa Laa" "Po"]
      :image "https://s3-us-west-1.amazonaws.com/sentai/45-squishies.jpeg"}
    46
-    {:name "Uchu Sentai Kyuranger"
+    {:name "Uchu Sentai Kyuranger (Space Squadron Nine Ranger)"
      :colors ["Red" "Orange" "Blue" "Gold" "Black" "Silver" "Green" "Pink" "Yellow"]
      :image "https://s3-us-west-1.amazonaws.com/sentai/46-kyuranger.jpg"}
    47
