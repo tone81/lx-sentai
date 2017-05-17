@@ -204,12 +204,12 @@
   [text]
   (case text
     ""                  ["Tony" "Tyrone" "Denise" "Alice"]
-    "@insights"         ["Tony" "Tyrone" "Denise" "Alice" "Frank"]
+    "@insights"         ["Tony" "Tyrone" "Denise" "Alice"]
     "@security"         ["Damir" "Karen" "Josh" "KStar"]
-    "@spaces"           ["Mike" "Taylor" "Elliot" "Kyla"]
+    "@spaces"           ["Mike" "Taylor" "Elliot" "Kyla" "David"]
     "@records"          ["Sahil" "Andrew" "Bryan"]
     "@workflows"        ["Stephen" "James" "Xie" "Matt" "Sara"]
-    "@extensions"       ["Björn" "Wyatt"]
+    "@extensions"       ["Björn" "Wyatt" "Lougenia"]
     "@design"           ["Kay" "Abi" "Sharon"]
     "@customer_success" ["Natasha" "Caroline" "Chris" "Shane" "Merijn" "Maniza" "Alex" "Katy" "Jonas" "Martijn"]
     (split text #" ")))
