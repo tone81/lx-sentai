@@ -190,6 +190,10 @@
     {:name "Soldiers of the Outer Solar System"
      :colors ["Saturn" "Uranus" "Neptune" "Pluto (dwarf planet now)"]
      :image "https://s3-us-west-1.amazonaws.com/sentai/47-outer-senshi.jpg"}
+   48
+    {:name "Persona 5 Z Moves"
+     :colors ["Joker" "Panther" "Mona" "Skull" "Fox" "Oracle" "Queen" "Noir" "Crow"]
+     :image "https://s3-us-west-1.amazonaws.com/sentai/48-persona5.jpg"}
    })
 
 (defn get-random-sentai
