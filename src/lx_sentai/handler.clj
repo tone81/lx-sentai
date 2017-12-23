@@ -30,7 +30,7 @@
         (let [col-idx (get-color-index (count colors) color-indices)]
           (cons (str x " --> " (nth colors col-idx)) (get-value xs, (conj color-indices col-idx)))))))))
 
-(defn get-repsonse
+(defn get-response
   [text]
   (let [{name :name image :image colors :colors} (get-random-sentai)]
     {:response_type "in_channel"
@@ -53,7 +53,7 @@
       :query-params [token :- String {text :- String ""}]
       :summary      "Get the Pose with token and text. text defaults to empty string."
       (if (== (compare token TOKEN) 0)
-        (ok (get-repsonse text))
+        (ok (get-response text))
         (ok "Sowwy!"))
     )
   ))
